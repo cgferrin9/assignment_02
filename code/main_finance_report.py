@@ -1,12 +1,4 @@
-
 import sys
-
-seed = None
-if len(sys.argv) > 1 and sys.argv[1].strip() != "":
-    seed = int(sys.argv[1])
-
-import sys
-
 
 seed = None
 if len(sys.argv) > 1 and sys.argv[1].strip() != "":
