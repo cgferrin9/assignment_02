@@ -37,14 +37,11 @@ if len(sys.argv) > 1 and sys.argv[1].strip() != "":
 
 import sys
 
-# --- Reading the dataset seed ----------------------------------------------------
 
 seed = None
 if len(sys.argv) > 1 and sys.argv[1].strip() != "":
     seed = int(sys.argv[1])
 
-
-# --- The report ------------------------------------------------------------------
 
 from sales_pipeline import (
     get_raw_sales_data,
