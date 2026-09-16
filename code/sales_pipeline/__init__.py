@@ -86,6 +86,15 @@ HOW TO BUILD IT
 # Keep it in step with the imports above. A name here that is not imported above is
 # a broken promise; a name imported above but missing here is a feature nobody can
 # find.
+
+from .transform import clean_sales_data, calculate_total_revenue
+from .extract import get_raw_sales_data
+from .display import print_sales_table
+
 __all__ = [
-    # TODO: list every name you imported above, in the same order.
+    "clean_sales_data",
+    "calculate_total_revenue",
+    "get_raw_sales_data",
+    "print_sales_table",
 ]
+
