@@ -1,22 +1,3 @@
-"""
-main_marketing_report.py — the Marketing department's report.
-
-Marketing does not care about individual transactions. They care about *products*:
-which one earns the most money, and which one moves the most units. Those are
-frequently not the same product, and the gap between them is the interesting part.
-
-This is the payoff for building a package instead of a script. Marketing needs a
-roll-up that Finance never asked for, so `summarize_by_item` and `find_top_entry`
-were **added** to `sales_pipeline.transform` — and `main_finance_report.py` did
-not change by a single character. That is what modular means: the package grows
-by addition, not by editing everyone who already depends on it.
-
-Before running:  pip install -r requirements.txt
-
-    python code/main_marketing_report.py        # the fixed sample data
-    python code/main_marketing_report.py 42     # the generated data for seed 42
-"""
-
 import sys
 
 from sales_pipeline import (
