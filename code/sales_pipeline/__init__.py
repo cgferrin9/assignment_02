@@ -87,14 +87,24 @@ HOW TO BUILD IT
 # a broken promise; a name imported above but missing here is a feature nobody can
 # find.
 
-from .transform import clean_sales_data, calculate_total_revenue
+from .transform import (
+    clean_sales_data,
+    calculate_total_revenue,
+    summarize_by_item,
+    find_top_entry,
+    summarize_by_day,
+)
 from .extract import get_raw_sales_data
-from .display import print_sales_table
+from .display import print_sales_table, print_item_table, print_day_table
 
 __all__ = [
     "clean_sales_data",
     "calculate_total_revenue",
     "get_raw_sales_data",
     "print_sales_table",
+    "summarize_by_item",
+    "find_top_entry",
+    "print_item_table",
+    "summarize_by_day",
+    "print_day_table",
 ]
-
