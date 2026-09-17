@@ -1,9 +1,21 @@
-Write your reflection here.
+Through this assignment, I learned more about how a Python data pipeline works
+and how different files in a package work together.
+I practiced cleaning data, calculating total revenue,
+and creating summaries by item and by day.
+I also learned more about using imports and __init__.py to make functions
+available across the different files.
 
-See reflection.md for what makes a good reflection — be specific, use the
-terminology from this assignment (package, module, ETL, coercion, public API,
-relative import, accumulator, group by, unit vs. integration test), and make it
-actionable.
+One thing I struggled with with this assignment was 
+keeping track of the different types of data being
+passed between functions. For example, I accidentally used the wrong display
+function in the marketing report because I was using the item summary instead of
+the cleaned sales data. This helped me realize that I need to pay more attention
+to what each function returns and what keys are included in the dictionaries.
 
-
-
+I also struggled with the integration tests for the daily report.
+The code was running, but the output was missing some of the information the test expected.
+I learned that integration tests can test how all the different parts of
+the program work together, not just whether one function works by itself. 
+Going forward, I want to get better at reading error messages and 
+test failures and tracing where the data is coming from instead of 
+immediately trying to change the code.
